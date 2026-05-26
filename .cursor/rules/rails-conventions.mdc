@@ -1,0 +1,12 @@
+---
+description: Rails 8 conventions for the sample todo app
+alwaysApply: true
+---
+
+- Prefer Turbo Streams over custom JavaScript for partial page updates
+- Keep all migrations reversible (define both `up`/`down` or use `change` with reversible methods)
+- Use `params.expect()` for strong parameters, not the older `params.require().permit()` pattern
+- Use `bin/rails generate` rather than hand-writing boilerplate controllers, models, or migrations
+- Keep the schema scoped to the todo app — do not import or reference models/migrations from other projects
+- Place shared view partials in `app/views/todos/` with a `_` prefix
+- Turbo Stream view files follow the naming convention `action.turbo_stream.erb` inside the relevant views folder

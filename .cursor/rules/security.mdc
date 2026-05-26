@@ -1,0 +1,12 @@
+---
+description: Security rules for the sample todo app
+alwaysApply: true
+---
+
+- Never write, log, or echo secrets, API keys, or production credentials in any file
+- No `eval` on user input under any circumstances
+- No `html_safe` or `raw` on untrusted or user-supplied input
+- Use parameterized queries only — never string-interpolate values into SQL
+- Do not disable CSRF protection (`skip_before_action :verify_authenticity_token` is forbidden)
+- Do not disable mass assignment protection; always use strong parameters via `params.expect()`
+- Do not disable or weaken content security policy settings in `config/initializers/content_security_policy.rb`
