@@ -2,6 +2,12 @@
 
 one:
   description: MyString
+  high_priority: false
 
 two:
   description: MyString
+  high_priority: false
+
+high_priority:
+  description: Important todo
+  high_priority: true
