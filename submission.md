@@ -88,3 +88,4 @@ You add `format.turbo_stream` in a rails controller in the `respond_to` block. R
 Cursor listed seven Turbo Stream actions: append, prepend, replace, update, remove, before, after. I verified this against the Turbo Streams handbook (https://turbo.hotwired.dev/reference/streams). The handbook also confirms the MIME type `text/vnd.turbo-stream.html` and that `format.turbo_stream` with no inline block renders the matching `action.turbo_stream.erb` view.
 
 ### Pull request URL
+https://github.com/NU-CS-Software-Studio-Spring-26/homework-5-cbolson22/pull/1
